@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000000;
+            min-height: 100vh;
+            color: white;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        h1 {
+            color: whitesmoke;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .birthday-name {
+            font-size: 2em;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .age-text {
+            color: #ffffff;
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+
+        .photo-container {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+        .photo-frame {
+            width: 350px;
+            height: 420px;
+            border-radius: 20px;
+            border: 5px solid rgb(230, 80, 212);
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(211, 44, 216, 0.3);
+            background: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5em;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-section {
+            margin-top: 450px;
+            max-width: 100%;
+        }
+
+        .cake-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cake {
+            font-size: 120px;
+        }
+
+        .wish-text {
+            color: #d807aec4;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .info-section {
+            background: #1a1a1a;
+            border-left: 5px solid #ff00ddc0;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #d80b90;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        .info-item span:not(.info-label) {
+            color: #ffffff;
+        }
+
+        .message-box {
+            background: #1a1a1a;
+            border-left: 5px solid #d80b90;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #ffffff;
+        }
+
+        .message-title {
+            color: #d80b90;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .emoji-row {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 3em;
+            letter-spacing: 20px;
+        }
+
+        .star {
+            position: fixed;
+            font-size: 20px;
+            animation: fall 4s linear forwards;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .header {
+                position: static;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .birthday-name {
+                font-size: 1.5em;
+            }
+
+            .photo-container {
+                position: static;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+
+            .photo-frame {
+                width: 200px;
+                height: 250px;
+            }
+
+            .content-section {
+                margin-top: 20px;
+            }
+
+            .cake {
+                font-size: 80px;
+            }
+
+            .info-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+        <div class="birthday-name">KARTHIKAYA BODDU</div>
+        <p class="age-text">🎂 Turning 12! 🎂</p>
+    </div>
+
+    <div class="photo-container">
+        <div class="photo-frame">
+            <img src="karthikaya1.jpg" alt="Birthday Photo">
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="cake-container">
+            <div class="cake">🎂</div>
+            <p class="wish-text">Make a wish! ✨</p>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">📅 Birthday:</span>
+                <span>November 20, 2013</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">🌟 Age:</span>
+                <span>12 Years Young!</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">💝 Favorite Food:</span>
+                <span>Pizza & Dal Rice.</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">🎯 Hobbies:</span>
+                <span>Photography, Badminton, Travel, Minecraft, online games.</span>
+            </div>
+        </div>
+
+        <div class="message-box">
+            <div class="message-title">🎊 SPECIAL BIRTHDAY MESSAGE:</div>
+            Happy birthday, Karthikeya! Congratulations on turning 12 years old. I hope your special day is filled with fun, laughter, and everything you wish for. Always stay curious, cheerful, and adventurous—I'm so proud to be your brother. Have a fantastic celebration, little champ!
+            <br><br>
+            With lots of love,<br>
+            Your loving brother, Sai Annaya
+
+            <div class="message-title" style="margin-top: 20px;">👇 Done By:-</div>
+            SAI 
+        </div>
+
+        <div class="emoji-row">
+            🎁 🎊 🎉 🎈 🎂 🎁
+        </div>
+    </div>
+
+    <script>
+        // Create falling stars
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            
+            // Random star emojis
+            const starTypes = ['⭐', '🌟', '✨', '💫', '⚡'];
+            star.textContent = starTypes[Math.floor(Math.random() * starTypes.length)];
+            
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = '-30px';
+            star.style.fontSize = (Math.random() * 20 + 15) + 'px';
+            
+            // Add twinkle effect to some stars
+            if (Math.random() > 0.5) {
+                star.style.animation = 'fall 4s linear forwards, twinkle 1s ease-in-out infinite';
+            }
+            
+            document.body.appendChild(star);
+            
+            setTimeout(() => star.remove(), 4000);
+        }
+
+        // Generate stars periodically
+        setInterval(createStar, 200);
+
+        // Initial burst of stars
+        for(let i = 0; i < 15; i++) {
+            setTimeout(createStar, i * 150);
+        }
+    </script>
+</body>
+</html>
