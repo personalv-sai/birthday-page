@@ -174,16 +174,25 @@
 
             .header {
                 position: static;
+                transform: none;
                 text-align: center;
                 margin-bottom: 30px;
+                width: 100%;
+                left: auto;
             }
 
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
+                word-wrap: break-word;
             }
 
             .birthday-name {
-                font-size: 1.5em;
+                font-size: 1.3em;
+                word-wrap: break-word;
+            }
+
+            .age-text {
+                font-size: 1.1em;
             }
 
             .photo-container {
@@ -191,11 +200,12 @@
                 display: flex;
                 justify-content: center;
                 margin-bottom: 30px;
+                left: auto;
             }
 
             .photo-frame {
-                width: 200px;
-                height: 250px;
+                width: 250px;
+                height: 300px;
             }
 
             .content-section {
@@ -206,8 +216,27 @@
                 font-size: 80px;
             }
 
+            .wish-text {
+                font-size: 1.2em;
+            }
+
             .info-section {
                 grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .info-item {
+                font-size: 1em;
+            }
+
+            .message-box {
+                padding: 20px;
+                font-size: 1em;
+            }
+
+            .emoji-row {
+                font-size: 2em;
+                letter-spacing: 10px;
             }
         }
     </style>
